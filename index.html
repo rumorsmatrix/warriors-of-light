@@ -1,0 +1,167 @@
+<html>
+<head>
+	<title>Warriors of Light (and JavaScript)</title>
+	<link rel="stylesheet" type="text/css" src="css/stylesheet.css">
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/classes/Sprite.js"></script>
+	<script type="text/javascript" src="js/classes/Character.js"></script>
+	<script type="text/javascript" src="js/classes/Party.js"></script>
+</head>
+<body>
+
+
+<div style="container">
+
+	<div id="party_container">
+
+
+	<div class="character">
+		<div id="sprite_0" class="character-sprite"></div>
+		<span id="character_0_job" class="character-job"></span><br />
+		<span id="character_0_name" class="character-name"></span>
+	</div>
+
+
+	</div>
+
+
+<!--
+	<form id="party_form" onsubmit="return false">
+
+		<select name="force_party">
+			<option value="0">No duplicate jobs</option>
+			<option value="1">True random</option>
+			<option value="2">Only physical jobs</option>
+			<option value="3">Only magical jobs</option>
+		</select>
+
+		<select name="force_gender">
+			<option value="x">Mixed gender party</option>
+			<option value="m">All-male party</option>
+			<option value="f">All-female party</option>
+		</select>
+
+		<p><button onclick="build_party();">Randomise</button></p>
+	</form>
+
+-->
+</div>
+
+<script type="text/javascript">
+
+// create default party
+wol.party = new Party('party_container', wol.data.party_size);
+
+
+// start animations
+// remember to turn on character.animating
+setInterval(function() { wol.party.Animate() } , wol.data.animation_speed);
+
+
+// wol.party.Generate();
+// wol.party.Render();
+// -> character.Render();
+
+
+/*
+
+function build_party() {
+
+	// reset all of the arrays
+	//
+	jobs = build_jobs_list();
+	male_names = build_male_names_list();
+	female_names = build_female_names_list();
+
+
+	// get options from form values
+	//
+	force_party = document.forms[0].elements['force_party'].value;
+	force_gender = document.forms[0].elements['force_gender'].value;
+
+
+	// remove jobs from list if we're forcing a special type of party
+	//
+	if (force_party == 2) {  jobs.splice(3, 3); }  // all physical party
+	if (force_party == 3) {  jobs.splice(0, 3); }  // all magical party
+
+
+
+	// clear previous output
+	//
+	document.getElementById("party_container").innerHTML = "";
+
+
+
+
+	for (i=0; i<4; i++) {
+
+		// pick a job
+		//
+		random_job_index = Math.floor(Math.random()*jobs.length);
+		party_jobs[i] = jobs[random_job_index];
+		if (force_party == 0) { jobs.splice(random_job_index, 1); }
+
+		// pick a name
+		//
+		if (force_gender == "m")  { assign_name(i, "m");  }
+		if (force_gender == "f")  { assign_name(i, "f");  }
+		if (force_gender == "x")  { assign_name(i, "x");  }
+
+		// output
+		//
+		if (party_jobs[i] == "Warrior")    { sprite_sheet_index = 0; }
+		if (party_jobs[i] == "Thief")      { sprite_sheet_index = 1; }
+		if (party_jobs[i] == "Monk")       { sprite_sheet_index = 2; }
+		if (party_jobs[i] == "Red Mage")   { sprite_sheet_index = 3; }
+		if (party_jobs[i] == "White Mage") { sprite_sheet_index = 4; }
+		if (party_jobs[i] == "Black Mage") { sprite_sheet_index = 5; }
+		job_sprites[i].sprite_row = sprite_sheet_index;
+		document.getElementById(job_sprites[i].sprite_container).style.backgroundPosition = "" + (job_sprites[i].x - 6) + "px " + (job_sprites[i].sprite_row * job_sprites[i].sprite_height) * -1 + "px";
+		document.getElementById("character" + i + "_class" ).innerHTML = party_jobs[i];
+		document.getElementById("character" + i + "_name" ).innerHTML = party_names[i];
+	}
+}
+
+
+
+
+
+function assign_name(index, gender) {
+
+	if (gender == "m") {
+		random_index = Math.floor(Math.random() * male_names.length);
+		party_names[index] = male_names[random_index];
+		male_names.splice(random_index, 1);
+	}
+
+	if (gender == "f") {
+		random_index = Math.floor(Math.random() * female_names.length);
+		party_names[index] = female_names[random_index];
+		female_names.splice(random_index, 1);
+	}
+
+	if (gender == "x") {
+		random_gender = Math.floor(Math.random() * 2);
+		if (random_gender == 1) {
+			random_index = Math.floor(Math.random() * male_names.length);
+			party_names[index] = male_names[random_index];
+			male_names.splice(random_index, 1);
+		} else {
+			random_index = Math.floor(Math.random() * female_names.length);
+			party_names[index] = female_names[random_index];
+			female_names.splice(random_index, 1);
+		}
+	}
+}
+
+*/
+
+
+
+
+
+
+</script>
+</body>
+</html>

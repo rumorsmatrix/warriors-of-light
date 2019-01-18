@@ -1,0 +1,1713 @@
+class Party {
+
+	constructor(container_element, party_size) {
+
+		this.container_element = container_element;
+		this.party_size = party_size;
+		this.members = [];
+
+		for (var i = 0; i < this.party_size; i++) {
+			this.members.push(new Character(i, 'Warrior', 'Boris'));
+		}
+	}
+
+
+	ResetData() {
+Content-type: text/html; charset=UTF-8
+
+Array
+(
+    [233] => Array
+        (
+            [catalogue_id] => 233
+            [friendly_name] => Gift Envy
+            [site_address] => www.giftenvy.co.uk
+            [site_folder] => www.giftsrhere.co.uk
+            [db_name] => www_giftsrhere_co_uk
+            [db_username] => giftsrhere
+            [db_password] => cm4pl6sH*TbPe6Zq
+            [op_require_fields] => N
+            [op_rel_items] => Y
+            [op_qty_brks] => N
+            [op_stk_ctrl] => Y
+            [op_stk_ctrl_add] => Y
+            [op_suppliers] => N
+            [op_basket_q] => N
+            [op_downloads] => N
+            [op_reviews] => N
+            [op_items_reviews] => N
+            [op_wysiwyg] => Y
+            [op_dropdown_tax] => N
+            [op_sale_prices] => Y
+            [op_percent_prices] => N
+            [op_import_items] => N
+            [op_export_items] => Y
+            [op_item_options] => N
+            [op_item_options_advanced] => N
+            [op_search_categories] => Y
+            [op_new_item_summary] => N
+            [op_meta_tags] => Y
+            [op_bullet_points] => N
+            [op_loyalty_points] => N
+            [op_display_qty] => N
+            [op_options_price_converter] => N
+            [op_item_templates] => N
+            [op_inactive_variations] => N
+            [op_item_postage_field] => N
+            [google_products_email] => giftsrhere@adwords.ssinternet.co.uk
+            [google_products_password] =>
+        )
+
+)
+object(edit_products_catalogue)#12 (80) {
+  ["defaultShipping":"edit_products_catalogue":private]=>
+  NULL
+  ["dbManager"]=>
+  object(Illuminate\Database\Capsule\Manager)#16 (2) {
+    ["manager":protected]=>
+    object(Illuminate\Database\DatabaseManager)#20 (4) {
+      ["app":protected]=>
+      object(Illuminate\Container\Container)#17 (16) {
+        ["resolved":protected]=>
+        array(0) {
+        }
+        ["bindings":protected]=>
+        array(0) {
+        }
+        ["methodBindings":protected]=>
+        array(0) {
+        }
+        ["instances":protected]=>
+        array(1) {
+          ["config"]=>
+          object(Illuminate\Support\Fluent)#18 (1) {
+            ["attributes":protected]=>
+            array(3) {
+              ["database.fetch"]=>
+              int(5)
+              ["database.default"]=>
+              string(7) "default"
+              ["database.connections"]=>
+              array(1) {
+                ["catalogue"]=>
+                array(6) {
+                  ["driver"]=>
+                  string(5) "mysql"
+                  ["host"]=>
+                  string(31) "mysql.ldn.netexpectations.co.uk"
+                  ["database"]=>
+                  string(20) "www_giftsrhere_co_uk"
+                  ["username"]=>
+                  string(10) "giftsrhere"
+                  ["password"]=>
+                  string(16) "cm4pl6sH*TbPe6Zq"
+                  ["options"]=>
+                  array(1) {
+                    [20]=>
+                    bool(true)
+                  }
+                }
+              }
+            }
+          }
+        }
+        ["aliases":protected]=>
+        array(0) {
+        }
+        ["abstractAliases":protected]=>
+        array(0) {
+        }
+        ["extenders":protected]=>
+        array(0) {
+        }
+        ["tags":protected]=>
+        array(0) {
+        }
+        ["buildStack":protected]=>
+        array(0) {
+        }
+        ["with":protected]=>
+        array(0) {
+        }
+        ["contextual"]=>
+        array(0) {
+        }
+        ["reboundCallbacks":protected]=>
+        array(0) {
+        }
+        ["globalResolvingCallbacks":protected]=>
+        array(0) {
+        }
+        ["globalAfterResolvingCallbacks":protected]=>
+        array(0) {
+        }
+        ["resolvingCallbacks":protected]=>
+        array(0) {
+        }
+        ["afterResolvingCallbacks":protected]=>
+        array(0) {
+        }
+      }
+      ["factory":protected]=>
+      object(Illuminate\Database\Connectors\ConnectionFactory)#19 (1) {
+        ["container":protected]=>
+        object(Illuminate\Container\Container)#17 (16) {
+          ["resolved":protected]=>
+          array(0) {
+          }
+          ["bindings":protected]=>
+          array(0) {
+          }
+          ["methodBindings":protected]=>
+          array(0) {
+          }
+          ["instances":protected]=>
+          array(1) {
+            ["config"]=>
+            object(Illuminate\Support\Fluent)#18 (1) {
+              ["attributes":protected]=>
+              array(3) {
+                ["database.fetch"]=>
+                int(5)
+                ["database.default"]=>
+                string(7) "default"
+                ["database.connections"]=>
+                array(1) {
+                  ["catalogue"]=>
+                  array(6) {
+                    ["driver"]=>
+                    string(5) "mysql"
+                    ["host"]=>
+                    string(31) "mysql.ldn.netexpectations.co.uk"
+                    ["database"]=>
+                    string(20) "www_giftsrhere_co_uk"
+                    ["username"]=>
+                    string(10) "giftsrhere"
+                    ["password"]=>
+                    string(16) "cm4pl6sH*TbPe6Zq"
+                    ["options"]=>
+                    array(1) {
+                      [20]=>
+                      bool(true)
+                    }
+                  }
+                }
+              }
+            }
+          }
+          ["aliases":protected]=>
+          array(0) {
+          }
+          ["abstractAliases":protected]=>
+          array(0) {
+          }
+          ["extenders":protected]=>
+          array(0) {
+          }
+          ["tags":protected]=>
+          array(0) {
+          }
+          ["buildStack":protected]=>
+          array(0) {
+          }
+          ["with":protected]=>
+          array(0) {
+          }
+          ["contextual"]=>
+          array(0) {
+          }
+          ["reboundCallbacks":protected]=>
+          array(0) {
+          }
+          ["globalResolvingCallbacks":protected]=>
+          array(0) {
+          }
+          ["globalAfterResolvingCallbacks":protected]=>
+          array(0) {
+          }
+          ["resolvingCallbacks":protected]=>
+          array(0) {
+          }
+          ["afterResolvingCallbacks":protected]=>
+          array(0) {
+          }
+        }
+      }
+      ["connections":protected]=>
+      array(0) {
+      }
+      ["extensions":protected]=>
+      array(0) {
+      }
+    }
+    ["container":protected]=>
+    object(Illuminate\Container\Container)#17 (16) {
+      ["resolved":protected]=>
+      array(0) {
+      }
+      ["bindings":protected]=>
+      array(0) {
+      }
+      ["methodBindings":protected]=>
+      array(0) {
+      }
+      ["instances":protected]=>
+      array(1) {
+        ["config"]=>
+        object(Illuminate\Support\Fluent)#18 (1) {
+          ["attributes":protected]=>
+          array(3) {
+            ["database.fetch"]=>
+            int(5)
+            ["database.default"]=>
+            string(7) "default"
+            ["database.connections"]=>
+            array(1) {
+              ["catalogue"]=>
+              array(6) {
+                ["driver"]=>
+                string(5) "mysql"
+                ["host"]=>
+                string(31) "mysql.ldn.netexpectations.co.uk"
+                ["database"]=>
+                string(20) "www_giftsrhere_co_uk"
+                ["username"]=>
+                string(10) "giftsrhere"
+                ["password"]=>
+                string(16) "cm4pl6sH*TbPe6Zq"
+                ["options"]=>
+                array(1) {
+                  [20]=>
+                  bool(true)
+                }
+              }
+            }
+          }
+        }
+      }
+      ["aliases":protected]=>
+      array(0) {
+      }
+      ["abstractAliases":protected]=>
+      array(0) {
+      }
+      ["extenders":protected]=>
+      array(0) {
+      }
+      ["tags":protected]=>
+      array(0) {
+      }
+      ["buildStack":protected]=>
+      array(0) {
+      }
+      ["with":protected]=>
+      array(0) {
+      }
+      ["contextual"]=>
+      array(0) {
+      }
+      ["reboundCallbacks":protected]=>
+      array(0) {
+      }
+      ["globalResolvingCallbacks":protected]=>
+      array(0) {
+      }
+      ["globalAfterResolvingCallbacks":protected]=>
+      array(0) {
+      }
+      ["resolvingCallbacks":protected]=>
+      array(0) {
+      }
+      ["afterResolvingCallbacks":protected]=>
+      array(0) {
+      }
+    }
+  }
+  ["catalogue_id"]=>
+  string(3) "233"
+  ["friendly_name"]=>
+  string(9) "Gift Envy"
+  ["site_address"]=>
+  string(18) "www.giftenvy.co.uk"
+  ["site_folder"]=>
+  string(20) "www.giftsrhere.co.uk"
+  ["db_name"]=>
+  string(20) "www_giftsrhere_co_uk"
+  ["db_username"]=>
+  string(10) "giftsrhere"
+  ["db_password"]=>
+  string(16) "cm4pl6sH*TbPe6Zq"
+  ["op_require_fields"]=>
+  string(1) "N"
+  ["op_rel_items"]=>
+  string(1) "Y"
+  ["op_qty_brks"]=>
+  string(1) "N"
+  ["op_stk_ctrl"]=>
+  string(1) "Y"
+  ["op_stk_ctrl_add"]=>
+  string(1) "Y"
+  ["op_suppliers"]=>
+  string(1) "N"
+  ["op_basket_q"]=>
+  string(1) "N"
+  ["op_downloads"]=>
+  string(1) "N"
+  ["op_reviews"]=>
+  string(1) "N"
+  ["op_items_reviews"]=>
+  string(1) "N"
+  ["op_wysiwyg"]=>
+  string(1) "Y"
+  ["op_dropdown_tax"]=>
+  string(1) "N"
+  ["op_sale_prices"]=>
+  string(1) "Y"
+  ["op_percent_prices"]=>
+  string(1) "N"
+  ["op_import_items"]=>
+  string(1) "N"
+  ["op_export_items"]=>
+  string(1) "Y"
+  ["op_item_options"]=>
+  string(1) "N"
+  ["op_item_options_advanced"]=>
+  string(1) "N"
+  ["op_search_categories"]=>
+  string(1) "Y"
+  ["op_new_item_summary"]=>
+  string(1) "N"
+  ["op_meta_tags"]=>
+  string(1) "Y"
+  ["op_bullet_points"]=>
+  string(1) "N"
+  ["op_loyalty_points"]=>
+  string(1) "N"
+  ["op_display_qty"]=>
+  string(1) "N"
+  ["op_options_price_converter"]=>
+  string(1) "N"
+  ["op_item_templates"]=>
+  string(1) "N"
+  ["op_inactive_variations"]=>
+  string(1) "N"
+  ["op_item_postage_field"]=>
+  string(1) "N"
+  ["google_products_email"]=>
+  string(35) "giftsrhere@adwords.ssinternet.co.uk"
+  ["google_products_password"]=>
+  NULL
+  ["path"]=>
+  string(30) "/data/web/www.giftsrhere.co.uk"
+  ["https"]=>
+  bool(true)
+  ["sos_customer_id"]=>
+  string(3) "338"
+  ["db_old"]=>
+  resource(49) of type (mysql link)
+  ["db"]=>
+  object(ne_mysql)#11 (5) {
+    ["api":protected]=>
+    string(3) "pdo"
+    ["pdo":protected]=>
+    object(PDO)#15 (0) {
+    }
+    ["error":protected]=>
+    bool(false)
+    ["db_name":protected]=>
+    string(20) "www_giftsrhere_co_uk"
+    ["last_query":protected]=>
+    object(ne_mysql_query_object)#21 (11) {
+      ["api":protected]=>
+      string(3) "pdo"
+      ["named_binds":protected]=>
+      bool(false)
+      ["ne_mysql_parent":protected]=>
+      *RECURSION*
+      ["pdo_parent":protected]=>
+      object(PDO)#15 (0) {
+      }
+      ["pdo_query":protected]=>
+      object(PDOStatement)#22 (1) {
+        ["queryString"]=>
+        string(24) "SELECT * FROM currencies"
+      }
+      ["mysqli_parent":protected]=>
+      NULL
+      ["mysqli_query":protected]=>
+      NULL
+      ["error":protected]=>
+      bool(false)
+      ["affected_rows":protected]=>
+      bool(false)
+      ["result_array":protected]=>
+      NULL
+      ["bind_result_array":protected]=>
+      NULL
+    }
+  }
+  ["languages"]=>
+  array(1) {
+    [1]=>
+    string(7) "English"
+  }
+  ["default_language"]=>
+  string(1) "1"
+  ["price_profiles"]=>
+  array(3) {
+    [1]=>
+    array(6) {
+      ["price_profile_id"]=>
+      string(1) "1"
+      ["friendly_name"]=>
+      string(8) "Standard"
+      ["default_price_profile"]=>
+      string(1) "Y"
+      ["tax_included"]=>
+      string(1) "Y"
+      ["commission"]=>
+      string(1) "0"
+      ["commission_includes_postage"]=>
+      NULL
+    }
+    [2]=>
+    array(6) {
+      ["price_profile_id"]=>
+      string(1) "2"
+      ["friendly_name"]=>
+      string(4) "Ebay"
+      ["default_price_profile"]=>
+      string(1) "N"
+      ["tax_included"]=>
+      string(1) "Y"
+      ["commission"]=>
+      string(1) "0"
+      ["commission_includes_postage"]=>
+      NULL
+    }
+    [3]=>
+    array(6) {
+      ["price_profile_id"]=>
+      string(1) "3"
+      ["friendly_name"]=>
+      string(6) "Amazon"
+      ["default_price_profile"]=>
+      string(1) "N"
+      ["tax_included"]=>
+      string(1) "Y"
+      ["commission"]=>
+      string(1) "0"
+      ["commission_includes_postage"]=>
+      NULL
+    }
+  }
+  ["default_price_profile"]=>
+  string(1) "1"
+  ["postal_zones"]=>
+  array(5) {
+    [1]=>
+    string(11) "UK Mainland"
+    [2]=>
+    string(7) "Ireland"
+    [3]=>
+    string(15) "Channel Islands"
+    [4]=>
+    string(6) "Europe"
+    [5]=>
+    string(13) "Rest of World"
+  }
+  ["customer_profiles"]=>
+  array(0) {
+  }
+  ["items_brands"]=>
+  array(38) {
+    [19]=>
+    string(25) "Ancient Mariner Furniture"
+    [24]=>
+    string(11) "Beamfeature"
+    [27]=>
+    string(6) "Bladez"
+    [20]=>
+    string(5) "Boing"
+    [32]=>
+    string(6) "Bruder"
+    [31]=>
+    string(23) "Carpe Diem Leatherbound"
+    [2]=>
+    string(12) "Clayre & Eef"
+    [8]=>
+    string(6) "Cocoon"
+    [33]=>
+    string(12) "Deckled Edge"
+    [36]=>
+    string(9) "Gift Envy"
+    [3]=>
+    string(12) "Gifts R Here"
+    [11]=>
+    string(9) "Giftworks"
+    [6]=>
+    string(6) "Joey D"
+    [13]=>
+    string(12) "Juniper Tree"
+    [22]=>
+    string(9) "Keel Toys"
+    [30]=>
+    string(14) "Lesser & Pavey"
+    [38]=>
+    string(11) "Ling Design"
+    [7]=>
+    string(11) "Little Book"
+    [26]=>
+    string(18) "Little Dog Laughed"
+    [5]=>
+    string(24) "Mad Rabbit Kicking Tiger"
+    [15]=>
+    string(14) "Melissa & Doug"
+    [14]=>
+    string(7) "Mustard"
+    [25]=>
+    string(11) "Nemesis Now"
+    [35]=>
+    string(15) "One Lump Or Two"
+    [28]=>
+    string(8) "Onyx Art"
+    [16]=>
+    string(8) "Padgetts"
+    [23]=>
+    string(3) "PMS"
+    [9]=>
+    string(8) "Puckator"
+    [34]=>
+    string(5) "Regal"
+    [10]=>
+    string(4) "Root"
+    [12]=>
+    string(8) "Skocz▒na"
+    [37]=>
+    string(17) "Three French Hens"
+    [21]=>
+    string(5) "Tobar"
+    [4]=>
+    string(4) "TOBS"
+    [17]=>
+    string(9) "Tweedmill"
+    [29]=>
+    string(15) "Victor's Drinks"
+    [1]=>
+    string(6) "WeWood"
+    [18]=>
+    string(14) "Wild Moorlands"
+  }
+  ["accounting_categories"]=>
+  array(1) {
+    [1]=>
+    array(2) {
+      ["ac_cat_id"]=>
+      string(1) "1"
+      ["name"]=>
+      string(7) "Default"
+    }
+  }
+  ["categories_templates"]=>
+  array(1) {
+    [1]=>
+    array(3) {
+      ["cat_template_id"]=>
+      string(1) "1"
+      ["friendly_name"]=>
+      string(8) "Standard"
+      ["filename"]=>
+      string(20) "itemlist.default.inc"
+    }
+  }
+  ["search_category_id"]=>
+  string(7) "2002142"
+  ["suppliers"]=>
+  array(0) {
+  }
+  ["active_suppliers"]=>
+  array(0) {
+  }
+  ["item_tax_groups"]=>
+  array(2) {
+    [3]=>
+    string(5) "UK 0%"
+    [1]=>
+    string(6) "UK 20%"
+  }
+  ["item_tax_groups_percent"]=>
+  array(2) {
+    [3]=>
+    string(1) "0"
+    [1]=>
+    string(3) "0.2"
+  }
+  ["postage_tax_groups"]=>
+  array(2) {
+    [4]=>
+    string(5) "UK 0%"
+    [2]=>
+    string(6) "UK 20%"
+  }
+  ["postage_tax_groups_percent"]=>
+  array(2) {
+    [4]=>
+    string(1) "0"
+    [2]=>
+    string(3) "0.2"
+  }
+  ["tax_groups"]=>
+  array(4) {
+    [3]=>
+    string(5) "UK 0%"
+    [4]=>
+    string(5) "UK 0%"
+    [1]=>
+    string(6) "UK 20%"
+    [2]=>
+    string(6) "UK 20%"
+  }
+  ["tax_codes"]=>
+  array(2) {
+    [1]=>
+    array(2) {
+      ["tax_name"]=>
+      string(12) "Standard VAT"
+      ["tax_percent"]=>
+      string(3) "0.2"
+    }
+    [2]=>
+    array(2) {
+      ["tax_name"]=>
+      string(8) "Zero VAT"
+      ["tax_percent"]=>
+      string(1) "0"
+    }
+  }
+  ["countries"]=>
+  array(255) {
+    [1]=>
+    array(2) {
+      ["country_id"]=>
+      string(1) "1"
+      ["country_name"]=>
+      string(14) "United Kingdom"
+    }
+    [2]=>
+    array(2) {
+      ["country_id"]=>
+      string(1) "2"
+      ["country_name"]=>
+      string(1) "-"
+    }
+    [3]=>
+    array(2) {
+      ["country_id"]=>
+      string(1) "3"
+      ["country_name"]=>
+      string(3) "USA"
+    }
+    [4]=>
+    array(2) {
+      ["country_id"]=>
+      string(1) "4"
+      ["country_name"]=>
+      string(6) "Canada"
+    }
+    [5]=>
+    array(2) {
+      ["country_id"]=>
+      string(1) "5"
+      ["country_name"]=>
+      string(9) "Abu Dhabi"
+    }
+    [6]=>
+    array(2) {
+      ["country_id"]=>
+      string(1) "6"
+      ["country_name"]=>
+      string(11) "Afghanistan"
+    }
+    [7]=>
+    array(2) {
+      ["country_id"]=>
+      string(1) "7"
+      ["country_name"]=>
+      string(5) "Ajman"
+    }
+    [8]=>
+    array(2) {
+      ["country_id"]=>
+      string(1) "8"
+      ["country_name"]=>
+      string(7) "Albania"
+    }
+    [9]=>
+    array(2) {
+      ["country_id"]=>
+      string(1) "9"
+      ["country_name"]=>
+      string(7) "Algeria"
+    }
+    [10]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "10"
+      ["country_name"]=>
+      string(7) "Andorra"
+    }
+    [11]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "11"
+      ["country_name"]=>
+      string(6) "Angola"
+    }
+    [12]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "12"
+      ["country_name"]=>
+      string(8) "Anguilla"
+    }
+    [13]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "13"
+      ["country_name"]=>
+      string(17) "Antigua & Barbuda"
+    }
+    [14]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "14"
+      ["country_name"]=>
+      string(9) "Argentina"
+    }
+    [15]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "15"
+      ["country_name"]=>
+      string(7) "Armenia"
+    }
+    [16]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "16"
+      ["country_name"]=>
+      string(5) "Aruba"
+    }
+    [17]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "17"
+      ["country_name"]=>
+      string(9) "Ascension"
+    }
+    [18]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "18"
+      ["country_name"]=>
+      string(9) "Australia"
+    }
+    [19]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "19"
+      ["country_name"]=>
+      string(7) "Austria"
+    }
+    [20]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "20"
+      ["country_name"]=>
+      string(10) "Azerbaijan"
+    }
+    [21]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "21"
+      ["country_name"]=>
+      string(6) "Azores"
+    }
+    [22]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "22"
+      ["country_name"]=>
+      string(7) "Bahamas"
+    }
+    [23]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "23"
+      ["country_name"]=>
+      string(7) "Bahrain"
+    }
+    [24]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "24"
+      ["country_name"]=>
+      string(16) "Balearic Islands"
+    }
+    [25]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "25"
+      ["country_name"]=>
+      string(10) "Bangladesh"
+    }
+    [26]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "26"
+      ["country_name"]=>
+      string(8) "Barbados"
+    }
+    [27]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "27"
+      ["country_name"]=>
+      string(7) "Belarus"
+    }
+    [28]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "28"
+      ["country_name"]=>
+      string(13) "Belau (Palau)"
+    }
+    [29]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "29"
+      ["country_name"]=>
+      string(7) "Belgium"
+    }
+    [30]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "30"
+      ["country_name"]=>
+      string(6) "Belize"
+    }
+    [31]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "31"
+      ["country_name"]=>
+      string(5) "Benin"
+    }
+    [32]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "32"
+      ["country_name"]=>
+      string(7) "Bermuda"
+    }
+    [33]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "33"
+      ["country_name"]=>
+      string(6) "Bhutan"
+    }
+    [34]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "34"
+      ["country_name"]=>
+      string(7) "Bolivia"
+    }
+    [35]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "35"
+      ["country_name"]=>
+      string(18) "Bosnia-Herzegovina"
+    }
+    [36]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "36"
+      ["country_name"]=>
+      string(8) "Botswana"
+    }
+    [37]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "37"
+      ["country_name"]=>
+      string(6) "Brazil"
+    }
+    [38]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "38"
+      ["country_name"]=>
+      string(20) "British Indian Ocean"
+    }
+    [39]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "39"
+      ["country_name"]=>
+      string(22) "British Virgin Islands"
+    }
+    [40]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "40"
+      ["country_name"]=>
+      string(17) "Brunei Darussalam"
+    }
+    [41]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "41"
+      ["country_name"]=>
+      string(8) "Bulgaria"
+    }
+    [42]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "42"
+      ["country_name"]=>
+      string(12) "Burkina Faso"
+    }
+    [43]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "43"
+      ["country_name"]=>
+      string(7) "Burundi"
+    }
+    [44]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "44"
+      ["country_name"]=>
+      string(8) "Cambodia"
+    }
+    [45]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "45"
+      ["country_name"]=>
+      string(8) "Cameroon"
+    }
+    [46]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "46"
+      ["country_name"]=>
+      string(6) "Canada"
+    }
+    [47]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "47"
+      ["country_name"]=>
+      string(14) "Canary Islands"
+    }
+    [48]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "48"
+      ["country_name"]=>
+      string(10) "Cape Verde"
+    }
+    [49]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "49"
+      ["country_name"]=>
+      string(14) "Cayman Islands"
+    }
+    [50]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "50"
+      ["country_name"]=>
+      string(20) "Central African Rep."
+    }
+    [51]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "51"
+      ["country_name"]=>
+      string(4) "Chad"
+    }
+    [52]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "52"
+      ["country_name"]=>
+      string(5) "Chile"
+    }
+    [53]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "53"
+      ["country_name"]=>
+      string(25) "China (People's Republic)"
+    }
+    [54]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "54"
+      ["country_name"]=>
+      string(16) "Christmas Island"
+    }
+    [55]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "55"
+      ["country_name"]=>
+      string(29) "Cocos Island (Keeling Island)"
+    }
+    [56]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "56"
+      ["country_name"]=>
+      string(8) "Colombia"
+    }
+    [57]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "57"
+      ["country_name"]=>
+      string(7) "Comoros"
+    }
+    [58]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "58"
+      ["country_name"]=>
+      string(5) "Congo"
+    }
+    [59]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "59"
+      ["country_name"]=>
+      string(15) "Congo Dem. Rep."
+    }
+    [60]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "60"
+      ["country_name"]=>
+      string(7) "Corsica"
+    }
+    [61]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "61"
+      ["country_name"]=>
+      string(10) "Costa Rica"
+    }
+    [62]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "62"
+      ["country_name"]=>
+      string(13) "Cote d'Ivoire"
+    }
+    [63]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "63"
+      ["country_name"]=>
+      string(7) "Croatia"
+    }
+    [64]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "64"
+      ["country_name"]=>
+      string(4) "Cuba"
+    }
+    [65]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "65"
+      ["country_name"]=>
+      string(7) "Curacao"
+    }
+    [66]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "66"
+      ["country_name"]=>
+      string(6) "Cyprus"
+    }
+    [67]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "67"
+      ["country_name"]=>
+      string(14) "Czech Republic"
+    }
+    [68]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "68"
+      ["country_name"]=>
+      string(7) "Denmark"
+    }
+    [69]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "69"
+      ["country_name"]=>
+      string(8) "Djibouti"
+    }
+    [70]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "70"
+      ["country_name"]=>
+      string(8) "Dominica"
+    }
+    [71]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "71"
+      ["country_name"]=>
+      string(18) "Dominican Republic"
+    }
+    [72]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "72"
+      ["country_name"]=>
+      string(5) "Dubai"
+    }
+    [73]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "73"
+      ["country_name"]=>
+      string(10) "East Timor"
+    }
+    [74]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "74"
+      ["country_name"]=>
+      string(7) "Ecuador"
+    }
+    [75]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "75"
+      ["country_name"]=>
+      string(5) "Egypt"
+    }
+    [76]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "76"
+      ["country_name"]=>
+      string(11) "El Salvador"
+    }
+    [77]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "77"
+      ["country_name"]=>
+      string(17) "Equatorial Guinea"
+    }
+    [78]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "78"
+      ["country_name"]=>
+      string(7) "Eritrea"
+    }
+    [79]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "79"
+      ["country_name"]=>
+      string(7) "Estonia"
+    }
+    [80]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "80"
+      ["country_name"]=>
+      string(8) "Ethiopia"
+    }
+    [81]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "81"
+      ["country_name"]=>
+      string(16) "Falkland Islands"
+    }
+    [82]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "82"
+      ["country_name"]=>
+      string(13) "Faroe Islands"
+    }
+    [83]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "83"
+      ["country_name"]=>
+      string(4) "Fiji"
+    }
+    [84]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "84"
+      ["country_name"]=>
+      string(7) "Finland"
+    }
+    [85]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "85"
+      ["country_name"]=>
+      string(6) "France"
+    }
+    [86]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "86"
+      ["country_name"]=>
+      string(13) "French Guiana"
+    }
+    [87]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "87"
+      ["country_name"]=>
+      string(16) "French Polynesia"
+    }
+    [88]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "88"
+      ["country_name"]=>
+      string(39) "French Southern & Antarctic Territories"
+    }
+    [89]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "89"
+      ["country_name"]=>
+      string(18) "French West Indies"
+    }
+    [90]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "90"
+      ["country_name"]=>
+      string(8) "Fujairah"
+    }
+    [91]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "91"
+      ["country_name"]=>
+      string(5) "Gabon"
+    }
+    [92]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "92"
+      ["country_name"]=>
+      string(6) "Gambia"
+    }
+    [93]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "93"
+      ["country_name"]=>
+      string(16) "Gaza & KhanYunis"
+    }
+    [94]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "94"
+      ["country_name"]=>
+      string(7) "Georgia"
+    }
+    [95]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "95"
+      ["country_name"]=>
+      string(7) "Germany"
+    }
+    [96]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "96"
+      ["country_name"]=>
+      string(5) "Ghana"
+    }
+    [97]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "97"
+      ["country_name"]=>
+      string(9) "Gibraltar"
+    }
+    [98]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "98"
+      ["country_name"]=>
+      string(6) "Greece"
+    }
+    [99]=>
+    array(2) {
+      ["country_id"]=>
+      string(2) "99"
+      ["country_name"]=>
+      string(9) "Greenland"
+    }
+    [100]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "100"
+      ["country_name"]=>
+      string(7) "Grenada"
+    }
+    [101]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "101"
+      ["country_name"]=>
+      string(4) "Guam"
+    }
+    [102]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "102"
+      ["country_name"]=>
+      string(9) "Guatemala"
+    }
+    [103]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "103"
+      ["country_name"]=>
+      string(6) "Guinea"
+    }
+    [104]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "104"
+      ["country_name"]=>
+      string(13) "Guinea-Bissau"
+    }
+    [105]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "105"
+      ["country_name"]=>
+      string(6) "Guyana"
+    }
+    [106]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "106"
+      ["country_name"]=>
+      string(5) "Haiti"
+    }
+    [107]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "107"
+      ["country_name"]=>
+      string(8) "Honduras"
+    }
+    [108]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "108"
+      ["country_name"]=>
+      string(9) "Hong Kong"
+    }
+    [109]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "109"
+      ["country_name"]=>
+      string(7) "Hungary"
+    }
+    [110]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "110"
+      ["country_name"]=>
+      string(7) "Iceland"
+    }
+    [111]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "111"
+      ["country_name"]=>
+      string(5) "India"
+    }
+    [112]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "112"
+      ["country_name"]=>
+      string(9) "Indonesia"
+    }
+    [113]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "113"
+      ["country_name"]=>
+      string(4) "Iran"
+    }
+    [114]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "114"
+      ["country_name"]=>
+      string(4) "Iraq"
+    }
+    [115]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "115"
+      ["country_name"]=>
+      string(14) "Irish Republic"
+    }
+    [116]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "116"
+      ["country_name"]=>
+      string(6) "Israel"
+    }
+    [117]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "117"
+      ["country_name"]=>
+      string(5) "Italy"
+    }
+    [118]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "118"
+      ["country_name"]=>
+      string(7) "Jamaica"
+    }
+    [119]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "119"
+      ["country_name"]=>
+      string(5) "Japan"
+    }
+    [120]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "120"
+      ["country_name"]=>
+      string(6) "Jordan"
+    }
+    [121]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "121"
+      ["country_name"]=>
+      string(10) "Kazakhstan"
+    }
+    [122]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "122"
+      ["country_name"]=>
+      string(5) "Kenya"
+    }
+    [123]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "123"
+      ["country_name"]=>
+      string(11) "Kirghizstan"
+    }
+    [124]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "124"
+      ["country_name"]=>
+      string(8) "Kiribati"
+    }
+    [125]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "125"
+      ["country_name"]=>
+      string(36) "Korea (Democratic People's Republic)"
+    }
+    [126]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "126"
+      ["country_name"]=>
+      string(19) "Korea (Republic of)"
+    }
+    [127]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "127"
+      ["country_name"]=>
+      string(6) "Kuwait"
+    }
+    [128]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "128"
+      ["country_name"]=>
+      string(4) "Laos"
+    }
+    [129]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "129"
+      ["country_name"]=>
+      string(6) "Latvia"
+    }
+    [130]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "130"
+      ["country_name"]=>
+      string(7) "Lebanon"
+    }
+    [131]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "131"
+      ["country_name"]=>
+      string(7) "Lesotho"
+    }
+    [132]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "132"
+      ["country_name"]=>
+      string(7) "Liberia"
+    }
+    [133]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "133"
+      ["country_name"]=>
+      string(5) "Libya"
+    }
+    [134]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "134"
+      ["country_name"]=>
+      string(13) "Liechtenstein"
+    }
+    [135]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "135"
+      ["country_name"]=>
+      string(9) "Lithuania"
+    }
+    [136]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "136"
+      ["country_name"]=>
+      string(10) "Luxembourg"
+    }
+    [137]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "137"
+      ["country_name"]=>
+      string(5) "Macao"
+    }
+    [138]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "138"
+      ["country_name"]=>
+      string(35) "Macedonia (Former Yugoslav Rep. of)"
+    }
+    [139]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "139"
+      ["country_name"]=>
+      string(10) "Madagascar"
+    }
+    [140]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "140"
+      ["country_name"]=>
+      string(7) "Madeira"
+    }
+    [141]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "141"
+      ["country_name"]=>
+      string(6) "Malawi"
+    }
+    [142]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "142"
+      ["country_name"]=>
+      string(8) "Malaysia"
+    }
+    [143]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "143"
+      ["country_name"]=>
+      string(8) "Maldives"
+    }
+    [144]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "144"
+      ["country_name"]=>
+      string(4) "Mali"
+    }
+    [145]=>
+    array(2) {
+      ["country_id"]=>
+      string(3) "145"
+      ["country_name"]=>
+      string(5) "Malta"
+    }
+    [146]=>
+
+
+
+
+	Animate() {
+		this.members.forEach(function(member) { member.Animate(); });
+	}
+
+};

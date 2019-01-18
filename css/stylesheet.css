@@ -1,0 +1,36 @@
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+
+
+#party_form button { 
+	margin-top: 10px; 
+}
+
+#party_form select { 
+	margin: 0 5px 0 5px; 
+}
+
+#party_form {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.character {
+	width: 25%;
+	float: left;
+	text-align: center;
+	font-family: 'Press Start 2P';
+	font-size: 12px;
+}
+
+.character-sprite {
+	width: 60px;
+	height: 60px;
+	background: no-repeat;
+	background-position: 0px 0px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.character-job {
+	font-weight: bold; 
+}
